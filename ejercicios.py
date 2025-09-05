@@ -4,6 +4,10 @@ class baseEmpleado:
         self.salario = salario
         self.departamento = departamento
 
+class Empleado(baseEmpleado):
+    def __init__(self, nombre: str, salario: float, departamento: str):
+        super().__init__(nombre, salario, departamento)
+
     def trabajar(self) -> str:
         return f"El empleado {self.nombre} está trabajando en el departamento de {self.departamento}."
 
@@ -24,6 +28,10 @@ class desarrollador(baseEmpleado):
     
 
 mateo = desarrollador("Mateo", 6000000, "Desarrollo", "Python")
-Simon = Gerente("Simón", 10000000, "Ventas", ["Mateo", "Melina"])
+Simon = Gerente("Simón", 10000000, "Ventas", ["Mateo", "Laura"])
+melina = Empleado("Melina", 4000000, "Atención al cliente")
 print(mateo.trabajar())
 print(Simon.trabajar())
+print(melina.trabajar())
+
+
