@@ -1,0 +1,10 @@
+cola = list()
+print(cola)
+cola.append(1)
+cola.append(2)
+print(cola)
+cola.remove(1)
+print(cola)
+cola.pop(0)
+print(cola)
+

@@ -34,19 +34,19 @@ def main():
     # Crear algunos tickets de ejemplo
     tickets = [
         Ticket(
-            name="Juan Pérez", 
+            name="Mateo Hernandez", 
             type="dudas",
-            identity="12345678",
+            identity="100345678",
             case_description="Consulta sobre estado de cuenta",
-            age=65,  # Mayor de 60, debería tener prioridad automática
+            age=55,  # Mayor de 50, debería tener prioridad automática
             priority_attention=False
         ),
         Ticket(
-            name="María García", 
+            name="Camila Giraldo", 
             type="caja",
             identity="87654321",
             case_description="Deposito de cheque",
-            age=35,
+            age=34,
             priority_attention=True  # Solicita prioridad explícitamente
         ),
         Ticket(
@@ -58,7 +58,7 @@ def main():
             priority_attention=False
         ),
         Ticket(
-            name="Ana Martínez", 
+            name="Amanda Martínez", 
             type="asesor",
             identity="98765432",
             case_description="Información sobre préstamos",
